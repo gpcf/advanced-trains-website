@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Advanced trains mod for minetest</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/w3.css">
+</head>
+
+<body>
+<body style="background-image: url('https://cdn.kde.org/img/bg.png')">
+
+	<!--Navbar-->
+	<ul class="w3-navbar w3-green">
+		<li><img style="image-rendering: optimizeSpeed; image-rendering: -moz-crisp-edges; image-rendering: -webkit-optimize-contrast; image-rendering: optimize-contrast; image-rendering: pixelated; -ms-interpolation-mode: nearest-neighbor;" src="img/logo.png" alt="" height="45"></li>
+		<li><a class="w3-padding-16" href="index.html">Home</a></li>
+		<li><a class="w3-padding-16" href="Download/download.html">Download </a></li>
+		<li><a class="w3-padding-16" href="Galerie/galerie.html">Galerie</a></li>
+		<li><a class="w3-padding-16" href="about_us/about_us.html">about us</a></li>
+	</ul>
+	</div>
+	
+	<header>
+	<div id="header" class="w3-panel w3-pale-green w3-bottombar w3-border-dark-grey" style="background-image: url('img/header.png');background-repeat:no-repeat;background-position:center;background-color:#546580;color:#fff;height:600px;overflow: hidden;">
+    
+		<div class="w3-container w3-center w3-padding-16">
+			<img style="image-rendering: optimizeSpeed; image-rendering: -moz-crisp-edges; image-rendering: -webkit-optimize-contrast; image-rendering: optimize-contrast; image-rendering: pixelated; -ms-interpolation-mode: nearest-neighbor;" src="img/logo_text.png" height="300">
+		</div>
+	</div>
+	</header>
+	
+	
+	
+    <div id="text" style="width: 90%" class="w3-card-16 w3-margin-left w3-padding-jumbo w3-light-grey w3-leftbar w3-border-green">
+    <article>
+	<p>This mod adds good-looking, realistic trains to minetest. It introduces rails that make turns of only 30 degrees instead of 90.</p>
+
+	<p><h3>Until now are supported:</h3>
+	<li>tracks and switches, based on angles of 30(!) degrees</li>
+	<li>wagons that drive on these rails and collide with nodes in the environment(they need 3x3x3 space)</li>
+	<li>a steam engine</li>
+	<li>a regular green wagon</li>
+	<li>a subway train</li>
+	<li>coupling /discoupling of wagons/trains</li>
+	<li>trains can travel through unloaded map chunks (buggy)</li>
+	<li>head-up display for train speed and nice controls when sitting in locomotive</li>
+	<li>signals and bumpers</li>
+	<li>switches and signals controllable by mesecons</li>
+	<li>wagons have an owner, only this owner can destroy or discouple wagons.</li>
+	</p>
+	<p>
+	<h3>Planned features:</h3>
+	<li>locomotives need coal to drive (and water...)</li>
+	<li>more types of trains and rails(electric, diesel, maglevs...)</li>
+	<li>better textures</li>
+	<li>physics for train collisions (conservation of momentum)</li>
+	<li>Automatic train control (ATC) via mesecons (only available on electric/subway trains, maybe allow for more features with digilines)</li>
+	<li>an API, because API's are cool.</li>
+	<li>(I will probably split trains api and actual trains into two mods, to allow for extensions to be enabled individually)</li>
+	</p>
+    <p>
+	Manual:
+	(complete introduction included)
+	- Use the 'track' item to place tracks. In most cases it will adjust rails in the direction you need them.
+	- use the trackworker tool (doctor who sonic screwdriver) to rotate tracks(right-click) and to change normal rails into switches(left-click)
+	- to overcome heights you need the ramped rails, place them and you will understand.
+	- right-click switches to change direction
+	- place locomotives or wagons by picking the item and placing it on a track.
+	- right-click a wagon or locomotive to sit onto it.
+	- inside a locomotive, use W/S to accelerate/decelerate the train. This will fail if the train can't move in the desired direction. Shift stops the train, aux1 (default E)or right-click on wagon will let you off.
+	- drive two trains together and they will connect by right-clicking that green icon that appears.
+	- punch the red couple icon between wagons to discouple them
+	</div>
+	</article>
+</body>
+</html>
